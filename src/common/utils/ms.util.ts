@@ -96,7 +96,6 @@ export function ms(str: StringValue): number {
         case "ms":
             return n;
         default:
-            // @typescript-eslint/restrict-template-expressions
             throw new Error(`Error: time unit ${type} was recognized, but there is no corresponding case. Please check the entered data.`);
     }
 }
