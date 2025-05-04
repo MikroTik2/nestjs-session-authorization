@@ -30,6 +30,7 @@ export default tseslint.config(
       '@typescript-eslint/no-explicit-any': 'warn',
       '@typescript-eslint/prefer-nullish-coalescing': 'off',
       '@typescript-eslint/no-unsafe-argument': 'off',
+      '@typescript-eslint/restrict-template-expressions': 'off',
 
       '@typescript-eslint/no-misused-new': 'error',
       '@typescript-eslint/no-non-null-assertion': 'error',
