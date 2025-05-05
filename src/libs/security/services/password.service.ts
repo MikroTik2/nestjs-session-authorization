@@ -1,5 +1,5 @@
-import crypto from "node:crypto";
-import util from "node:util";
+import * as crypto from "node:crypto";
+import * as util from "node:util";
 
 export class PasswordService {
     public async scryptHash(pass: string, salt?: string): Promise<string> {

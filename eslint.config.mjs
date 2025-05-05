@@ -40,6 +40,7 @@ export default tseslint.config(
       'import/extensions': 'off',
       'import/prefer-default-export': 'off',
       'prefer-promise-reject-errors': 'off',
+      'no-restricted-syntax': 'off',
       'class-methods-use-this': 'off',
       'no-useless-constructor': 'off',
       'import/no-unresolved': 'off',

@@ -82,5 +82,5 @@ function setupOpenAPI(app: NestApplication) {
         },
     };
 
-    SwaggerModule.setup("api-docs", app, document, options);
+    SwaggerModule.setup("docs", app, document, options);
 }

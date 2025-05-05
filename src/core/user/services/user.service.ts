@@ -22,7 +22,7 @@ export class UserService {
                 isVerified,
             },
             include: {
-                account: true,
+                accounts: true,
             },
         });
 
@@ -33,7 +33,7 @@ export class UserService {
         const user = await this.prisma.user.findUnique({
             where: { id },
             include: {
-                account: true,
+                accounts: true,
             },
         });
 
@@ -48,7 +48,7 @@ export class UserService {
         return this.prisma.user.findUnique({
             where: { email },
             include: {
-                account: true,
+                accounts: true,
             },
         });
     }

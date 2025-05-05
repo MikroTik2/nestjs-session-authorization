@@ -23,7 +23,7 @@ model User {
 
   method AuthMethod
 
-  account Account[]
+  accounts Account[]
 
   createdAt DateTime @default(now()) @map("created_at")
   updatedAt DateTime @default(now()) @map("updated_at")
@@ -38,7 +38,7 @@ model Account {
   provider String
 
   refreshToken String? @map("refresh_token")
-  accesshToken String? @map("access_token")
+  accessToken String? @map("access_token")
   expiresAt    Int @map("expires_at")
 
   createdAt DateTime @default(now()) @map("created_at")
@@ -57,6 +57,8 @@ model Token {
   token String @unique
   type TokenType
   expiresIn DateTime @map("expires_in")
+
+  createdAt DateTime @default(now()) @map("created_at")
   
   @@map("tokens")
 }

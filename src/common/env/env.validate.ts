@@ -118,6 +118,10 @@ class EnvironmentVariables {
 
     @IsString()
     @IsNotEmpty()
+    GOOGLE_RECAPTCHA_SECRET_KEY: string;
+
+    @IsString()
+    @IsNotEmpty()
     GOOGLE_CLIENT_ID: string;
 
     @IsString()
